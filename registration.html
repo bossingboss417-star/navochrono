@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+</head>
+<body>
+<header>
+<nav>
+<a href="index.html">HOME</a> |
+<a href="about.html">ABOUT</a> |
+<a href="education.html">EDUCATION</a> |
+<a href="skills.html">SKILLS</a> |
+<a href="contact.html">CONTACT</a> |
+<a href="formatting.html">Lab 2</a> |
+<a href="lists.html">Lab 3</a> |
+<a href="links.html">Lab 4</a> |
+<a href="images.html">Lab 5</a> |
+<a href="schedule.html">Lab 6</a> |
+<a href="registration.html">Lab 7</a> |
+<a href="semantic.html">Lab 8</a> |
+<a href="multimedia.html">Lab 9</a>
+</nav>
+</header>
+
+<hr>
+<h1>Student Registration Form</h1>
+
+<form action="#" method="post">
+<p>
+<label for="fullname">Full Name:</label><br>
+<input type="text" id="fullname" name="fullname" placeholder="Gonzales, Ace A." minlength="3" maxlength="50" required>
+</p>
+
+<p>
+<label for="studentid">Student ID:</label><br>
+<input type="text" id="studentid" name="studentid" placeholder="Enter Student ID" minlength="5" maxlength="15" required>
+</p>
+
+<p>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="student@uc-bcf.edu.ph" required>
+</p>
+
+<p>
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" placeholder="Minimum 8 characters" minlength="8" maxlength="20" required>
+</p>
+
+<p>
+<label for="birthday">Birthday:</label><br>
+<input type="date" id="birthday" name="birthday" required>
+</p>
+
+<p>
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+</p>
+
+<p>
+<label for="program">Program:</label><br>
+<select id="program" name="program" required>
+<option value="">-- Select Program --</option>
+<option value="BSIT-Web">BSIT - Web Technology Track</option>
+<option value="BSIT-NetSec">BSIT - Network and Security Track</option>
+<option value="BSCS">BS Computer Science</option>
+</select>
+</p>
+
+<p>
+<label>Hobbies:</label><br>
+<input type="checkbox" id="coding" name="hobbies" value="Coding">
+<label for="coding">Programming</label><br>
+<input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+<label for="gaming">Gaming</label><br>
+<input type="checkbox" id="music" name="hobbies" value="Music">
+<label for="music">Music</label>
+</p>
+
+<p>
+<label for="address">Address:</label><br>
+<textarea id="address" name="address" rows="3" cols="40" placeholder="Enter your complete address" required></textarea>
+</p>
+
+<p>
+<label for="comments">Comments:</label><br>
+<textarea id="comments" name="comments" rows="4" cols="40" placeholder="Enter your comments" maxlength="200"></textarea>
+</p>
+
+<p>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<button type="button">Check Form</button>
+</p>
+</form>
+</body>
+</html>
